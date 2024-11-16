@@ -181,7 +181,7 @@ const server = createServer((req, res) => {
 const PORT = 8888;
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
-const basePath = path.join(dirname, '../'); 
+const basePath = path.join(dirname, './'); 
 
 /**
  * Starts the server and listens for incoming requests.
