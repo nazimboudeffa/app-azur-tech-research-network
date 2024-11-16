@@ -1,0 +1,110 @@
+/*
+    1- List of friends
+    2- Filters
+*/
+
+/* 1-List of friends */
+.friends {
+    padding: 20px;
+}
+
+.friends__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.friends__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.friend__card {
+    padding: 15px;
+    border-radius: 10px;
+    background: #E7EBF0;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15), -8px -8px 16px rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    cursor: grab;
+    transition: 0.3s;
+    justify-content: space-between;
+}
+
+.friend__info {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: flex-start;
+}
+
+.friend__move-icon {
+    width: 25px;
+}
+
+.friend__profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 700;
+}
+
+.friend__profile-pic {
+    border-radius: 100%;
+    width: 50px;
+    margin-right: 10px;
+    box-shadow: -10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD;
+}
+
+.friend__name {
+    font-weight: bold;
+}
+
+.friends__last-seen {
+    font-size: 1.4rem;
+    color: #858B96;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.friend__card.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+.friend__card:hover {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+}
+
+.friend__message {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: #E7EBF0;
+    border: none;
+    border-radius: 30px;
+    box-shadow: -10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD;
+}
+
+/* 2- Filters */
+.sort-select {
+    position: relative;
+    width: 200px;
+    background-color: #E0E5EC;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px #b8b9be, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+/* 3- Drag and drop */
+.drag-border {
+    border: black 2px solid;
+}

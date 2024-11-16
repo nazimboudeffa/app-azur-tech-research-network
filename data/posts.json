@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "authorId": 1,
+    "content": "Voici ma première publication ! #heureuse",
+    "image": "posts-20241112164717.jpg",
+    "reactions": {
+      "like": 12,
+      "dislike": 2
+    },
+    "comments": [
+      {
+        "id": 1,
+        "authorId": 2,
+        "content": "Super publication !",
+        "timestamp": "2024-11-10T10:24:00Z",
+        "depth": 1,
+        "replies": []
+      },
+      {
+        "id": 2,
+        "authorId": 3,
+        "content": "Je suis d'accord, très belle photo !",
+        "timestamp": "2024-11-10T12:15:00Z",
+        "depth": 1,
+        "replies": []
+      }
+    ],
+    "timestamp": "2024-11-10T09:30:00Z"
+  },
+  {
+    "id": 2,
+    "authorId": 3,
+    "content": "Un magnifique coucher de soleil depuis la montagne.",
+    "image": "posts-20241112164750.jpg",
+    "reactions": {
+      "like": 23,
+      "dislike": 1
+    },
+    "comments": [
+      {
+        "id": 3,
+        "authorId": 1,
+        "content": "Quelle vue !",
+        "timestamp": "2024-11-10T15:45:00Z",
+        "depth": 1
+      },
+      {
+        "id": 4,
+        "authorId": 2,
+        "content": "C'est génial",
+        "timestamp": "2024-11-15T20:32:47.548Z",
+        "depth": 1,
+        "replies": [
+          {
+            "id": 6,
+            "authorId": 0,
+            "content": "Je suis bien d'accord",
+            "timestamp": "2024-11-16T12:45:54.973Z",
+            "depth": 2,
+            "replies": []
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "authorId": 0,
+        "content": "Très joli",
+        "timestamp": "2024-11-16T12:43:36.237Z",
+        "depth": 1,
+        "replies": []
+      }
+    ],
+    "timestamp": "2024-11-10T14:00:00Z"
+  },
+  {
+    "id": 3,
+    "authorId": 3,
+    "content": "Un bon moment passé entre amies.",
+    "image": "posts-20241112164843.jpg",
+    "reactions": {
+      "like": 23,
+      "dislike": 1
+    },
+    "comments": [
+      {
+        "id": 3,
+        "authorId": 4,
+        "content": "Super !",
+        "timestamp": "2024-11-10T15:45:00Z",
+        "depth": 1
+      }
+    ],
+    "timestamp": "2024-11-10T14:00:00Z"
+  }
+]

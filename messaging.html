@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Moments Partagés</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/messaging.css">
+</head>
+<body>
+    <main class="layout-container">
+        <header class="sidebar">
+            <a class="sidebar__logo" href="index.html">
+                <img src="./assets/logo.svg" alt="Logo Moments Partagés">
+            </a>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__items">
+                    <li class="sidebar__item"><a href="index.html" class="sidebar__link"><img class="sidebar__icon" src="./assets/icons/home.svg" alt="Icône accueil">Accueil</a></li>
+                    <li class="sidebar__item"><a href="messaging.html" class="sidebar__link sidebar__link--active"><img class="sidebar__icon" src="./assets/icons/messages.svg" alt="Icône messages"> Messagerie</a></li>
+                    <li class="sidebar__item"><a href="friends.html" class="sidebar__link"><img class="sidebar__icon" src="./assets/icons/friends.svg" alt="Icône amis"> Mes amis</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar__toggle">
+                <span class="sidebar__icon"><img src="assets/icons/night.svg" alt="Mode nuit"></span>
+                <div class="sidebar__toggle_switch">
+                    <input class="toggle-input" id="toggle" type="checkbox">
+                    <label class="toggle-label" for="toggle"></label>
+                </div>
+                <span class="sidebar__icon"><img src="assets/icons/sun.svg" alt="Mode jour"></span>
+            </div>
+        </header>
+
+        <section class="content-area" id="messages">
+            <section class="messaging__sidebar">
+                <h1>Conversations</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher" class="search-bar__input">
+                </div>
+                <ul id="messageSidebar" class="messaging__contacts-list"></ul>
+            </section>
+
+            <section id="conversation" class="messaging__conversation">
+                <div class="conversation__header">
+                    <div class="conversation__profile">
+                        <img src="assets/images/profiles/alice.jpeg" alt="Profil de Alice" class="conversation__profile-pic">
+                        <p class="conversation__name">Alice</p>
+                    </div>
+                </div>
+                <div class="conversation__messages"></div>
+                <form class="form-message">
+                    <button class="form-message__file"><img src="assets/icons/link.svg" alt="Envoyer"></button>
+                    <input id="messageContent" type="text" placeholder="Écrivez votre message" class="form-message__field">
+                    <button class="form-message__send"><img src="assets/icons/send.svg" alt="Envoyer"></button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2024 Moments Partagés - Tous droits réservés</p>
+    </footer>
+
+    <script type="module" src="script/messaging.js"></script>
+</body>
+</html>

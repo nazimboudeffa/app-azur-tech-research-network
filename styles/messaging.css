@@ -1,0 +1,206 @@
+/*
+    1- Message sidebar
+    2- Conversation section
+    3- Message input
+    4- Responsive for computers
+*/
+.content-area {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* 1- Messaging sidebar */
+.messaging__sidebar {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.search-bar__input {
+    width: calc(100% - 45px);
+    padding: 15px 0 15px 45px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    background: #E7EBF0;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: url("../assets/icons/search.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    left: 10px;
+}
+
+.contact {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact a {
+    width: 100%;
+}
+
+.contact:hover, .contact.active {
+    box-shadow: inset -10px -10px 20px #FAFBFF, inset 10px 10px 20px #A6ABBD;
+    background-color: #fff;
+}
+
+.contact__profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact__info, .conversation__profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact__name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact__message-preview {
+    font-size: 1.6rem;
+}
+
+.contact__date {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #858B96;
+}
+
+/* 2- Conversation section */
+.messaging__conversation {
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: inset -10px -10px 20px #FAFBFF, inset 10px 10px 20px #A6ABBD;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    flex-direction: column;
+    max-height: 70vh;
+    margin-bottom: 50px;
+}
+
+.conversation__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #E7EBF0;
+    border-radius: 20px;
+    box-shadow: -10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD;
+    margin-bottom: 30px;
+}
+
+.conversation__profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.conversation__name {
+    font-weight: bold;
+}
+
+.conversation__messages {
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 0 10px;
+    height: 75%;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    background: #E7EBF0;
+    max-width: 70%;
+    box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.message--received {
+    border-bottom-left-radius: 0;
+}
+
+.message--sent {
+    margin-left: auto;
+    border-bottom-right-radius: 0;
+}
+
+.message__date {
+    font-size: 1.4rem;
+    color: #858B96;
+    text-align: right;
+    margin-top: 5px;
+}
+
+/* 3- Message input */
+.form-message {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: #E7EBF0;
+    box-shadow: inset -4px -4px 4px #ffffff, inset 5px 5px 2px #00000012;
+}
+
+.form-message__field {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 10px;
+    width: 75%;
+}
+
+.form-message__send, .form-message__file {
+    width: 40px;
+    height: 40px;
+    background: #E7EBF0;
+    border: none;
+    border-radius: 30px;
+    box-shadow: -10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD;
+    cursor: pointer;
+}
+
+/* 4- Responsive for computers */
+@media (min-width: 1024px) {
+    .messaging__sidebar {
+        width: 30%;
+        overflow-y: auto;
+        max-height: 75vh;
+        padding-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .messaging__conversation {
+        width: 60%;
+        max-height: 70vh;
+        margin-bottom: 0;
+    }
+}

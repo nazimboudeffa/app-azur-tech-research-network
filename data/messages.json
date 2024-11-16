@@ -1,0 +1,131 @@
+[
+  {
+    "id": 1,
+    "friendId": 1,
+    "messages": [
+      {
+        "senderId": 1,
+        "content": "Salut, comment ça va ?",
+        "timestamp": "2024-11-10T09:30:00Z"
+      },
+      {
+        "senderId": 0,
+        "content": "Ça va bien, merci ! Et toi ?",
+        "timestamp": "2024-11-10T09:32:00Z"
+      },
+      {
+        "senderId": 1,
+        "content": "Je vais super bien, merci !",
+        "timestamp": "2024-11-10T09:35:00Z"
+      },
+      {
+        "senderId": 0,
+        "content": "Tu fais quoi de beau aujourd'hui ?",
+        "timestamp": "2024-11-10T09:40:00Z"
+      },
+      {
+        "senderId": 1,
+        "content": "Je vais faire un tour en ville, tu veux venir ?",
+        "timestamp": "2024-11-10T09:45:00Z"
+      },
+      {
+        "senderId": 0,
+        "content": "Oui, bien sûr !",
+        "timestamp": "2024-11-16T14:14:11.166Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "friendId": 4,
+    "messages": [
+      {
+        "senderId": 4,
+        "content": "Hello ! As-tu vu mon dernier post ?",
+        "timestamp": "2024-11-10T10:45:00Z"
+      },
+      {
+        "senderId": 0,
+        "content": "Oui, il est super !",
+        "timestamp": "2024-11-10T10:46:00Z"
+      },
+      {
+        "senderId": 4,
+        "content": "Merci ! Ça m'a pris un moment pour le finaliser.",
+        "timestamp": "2024-11-10T10:47:00Z"
+      },
+      {
+        "senderId": 0,
+        "content": "Ça se voit, beau travail !",
+        "timestamp": "2024-11-10T10:49:00Z"
+      },
+      {
+        "senderId": 4,
+        "content": "On se voit ce week-end pour en discuter ?",
+        "timestamp": "2024-11-10T10:50:00Z"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "friendId": 3,
+    "messages": [
+      {
+        "senderId": 3,
+        "content": "Salut ! On se voit toujours demain ?",
+        "timestamp": "2024-11-11T14:00:00Z"
+      },
+      {
+        "senderId": 0,
+        "content": "Oui, à 14h au café habituel !",
+        "timestamp": "2024-11-11T14:05:00Z"
+      },
+      {
+        "senderId": 3,
+        "content": "Parfait, j’ai hâte de te raconter les nouvelles.",
+        "timestamp": "2024-11-11T14:10:00Z"
+      },
+      {
+        "senderId": 0,
+        "content": "Ah, tu as des nouveautés ? Hâte d’entendre ça !",
+        "timestamp": "2024-11-11T14:12:00Z"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "friendId": 2,
+    "messages": [
+      {
+        "senderId": 2,
+        "content": "Hey ! Tu as reçu le document que je t’ai envoyé ?",
+        "timestamp": "2024-11-12T16:20:00Z"
+      },
+      {
+        "senderId": 0,
+        "content": "Oui, merci beaucoup ! Je vais le lire ce soir.",
+        "timestamp": "2024-11-12T16:25:00Z"
+      },
+      {
+        "senderId": 2,
+        "content": "Dis-moi ce que tu en penses, j'ai besoin d'un retour.",
+        "timestamp": "2024-11-12T16:30:00Z"
+      },
+      {
+        "senderId": 0,
+        "content": "Pas de souci, je te fais ça dès demain matin.",
+        "timestamp": "2024-11-12T16:32:00Z"
+      },
+      {
+        "senderId": 2,
+        "content": "Top, merci beaucoup !",
+        "timestamp": "2024-11-12T16:35:00Z"
+      },
+      {
+        "senderId": 2,
+        "content": "Tu pourras me dire quand ça sera bon ?",
+        "timestamp": "2024-11-12T16:35:00Z"
+      }
+    ]
+  }
+]

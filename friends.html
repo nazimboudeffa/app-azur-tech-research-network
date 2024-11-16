@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Moments Partagés</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/friends.css">
+</head>
+<body>
+    <section class="layout-container">
+        <header class="sidebar">
+            <a class="sidebar__logo" href="index.html">
+                <img src="./assets/logo.svg" alt="Logo Moments Partagés">
+            </a>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__items">
+                    <li class="sidebar__item"><a href="index.html" class="sidebar__link"><img class="sidebar__icon" src="./assets/icons/home.svg" alt="Icône accueil">Accueil</a></li>
+                    <li class="sidebar__item"><a href="messaging.html" class="sidebar__link"><img class="sidebar__icon" src="./assets/icons/messages.svg" alt="Icône messages"> Messagerie</a></li>
+                    <li class="sidebar__item"><a href="friends.html" class="sidebar__link sidebar__link--active"><img class="sidebar__icon" src="./assets/icons/friends.svg" alt="Icône amis"> Mes amis</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar__toggle">
+                <span class="sidebar__icon"><img src="assets/icons/night.svg" alt="Mode nuit"></span>
+                <div class="sidebar__toggle_switch">
+                    <input class="toggle-input" id="toggle" type="checkbox">
+                    <label class="toggle-label" for="toggle"></label>
+                </div>
+                <span class="sidebar__icon"><img src="assets/icons/sun.svg" alt="Mode jour"></span>
+            </div>
+        </header>
+
+        <main class="content-area" id="messages">
+            <section class="friends">
+                <div class="friends__header">
+                    <h1 class="friends__title">Mes Amis</h1>
+                    <div class="friends__sort-dropdown">
+                        <label for="sort-options" class="sort-label">Trier par :</label>
+                        <select id="sort-options" class="sort-select">
+                            <option value="none" selected>Aucun tri</option>
+                            <option value="firstName">Prénom</option>
+                            <option value="lastName">Nom</option>
+                        </select>
+                    </div>
+                </div>
+                <ul class="friends__list">
+                    <li class="friend__card" draggable="true">
+                        <img class="friend__move-icon" src="./assets/icons/drag-drop.svg" alt="Déplacer">
+                        <div class="friend__info">
+                            <div class="friend__profile">
+                                <img src="assets/images/profiles/alice.jpeg" alt="Profil de Alice" class="friend__profile-pic">
+                                <p class="friend__profile-name">Marie Dupont</p>
+                            </div>
+                            <span class="friends__last-seen">Dernière connexion : il y a 2 jours</span>
+                        </div>
+                        <a href="./messaging.html?id=1" class="friend__message"><img src="assets/icons/send.svg" alt="Envoyer un message"></a>
+                    </li>
+                    <li class="friend__card" draggable="true">
+                        <img class="friend__move-icon" src="./assets/icons/drag-drop.svg" alt="Déplacer">
+                        <div class="friend__info">
+                            <div class="friend__profile">
+                                <img src="assets/images/profiles/jean.jpeg" alt="Profil de Jean" class="friend__profile-pic">
+                                <p class="friend__profile-name">Jean Pierre</p>
+                            </div>
+                            <span class="friends__last-seen">Dernière connexion : aujourd'hui</span>
+                        </div>
+                        <a href="./messaging.html?id=2" class="friend__message"><img src="assets/icons/send.svg" alt="Envoyer un message"></a>
+                    </li>
+                    <li class="friend__card" draggable="true">
+                        <img class="friend__move-icon" src="./assets/icons/drag-drop.svg" alt="Déplacer">
+                        <div class="friend__info">
+                            <div class="friend__profile">
+                                <img src="assets/images/profiles/marie.jpeg" alt="Profil de Marie" class="friend__profile-pic">
+                                <p class="friend__profile-name">Alice Claire</p>
+                            </div>
+                            <span class="friends__last-seen">Dernière connexion : il y a 5 heures</span>
+                        </div>
+                        <a href="./messaging.html?id=3" class="friend__message"><img src="assets/icons/send.svg" alt="Envoyer un message"></a>
+                    </li>
+                    <li class="friend__card" draggable="true">
+                        <img class="friend__move-icon" src="./assets/icons/drag-drop.svg" alt="Déplacer">
+                        <div class="friend__info">
+                            <div class="friend__profile">
+                                <img src="assets/images/profiles/bernard.jpeg" alt="Profil de Bernard" class="friend__profile-pic">
+                                <p class="friend__profile-name">Bernard Martin</p>
+                            </div>
+                            <span class="friends__last-seen">Dernière connexion : il y a 3 jours</span>
+                        </div>
+                        <a href="./messaging.html?id=4" class="friend__message"><img src="assets/icons/send.svg" alt="Envoyer un message"></a>
+                    </li>
+                </ul>
+            </section>            
+        </main>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">© 2024 Moments Partagés - Tous droits réservés</p>
+    </footer>
+
+    <script type="module" src="script/friends.js"></script>
+</body>
+</html>
